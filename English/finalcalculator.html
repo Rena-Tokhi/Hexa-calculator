@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>calcularor</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/nnn.css">
+    <link rel="stylesheet" href="../CSS/Hex-Calculator.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+
+<body>
+    <!-- nav -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+			<i class="bars">Ξ</i>
+		</label>
+        <label class="logo">CALCULATOR</label>
+        <ul id="home">
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a class="nava" href="finalcalculator.html">CALCULATOR</a></li>
+            <li><a class="nava" href="aboutus.html">about Us</a></li>
+        </ul>
+    </nav>
+    <!-- /nav -->
+    <div class="dashpord">
+        <!-- page location -->
+        <p class="position">
+            <span style="font-size: 14px"> <b> HOME   /  CALCULATOR</b> </span>
+        </p>
+        <!-- /page location -->
+      
+    </div>
+
+    <!-- continar -->
+    <div class="continar">
+        <!-- body -->
+        <!-- selection of system -->
+        <!-- <div class="select"> -->
+        <div class="new">
+            <!-- calculator -->
+            <div class="calculator1">
+                <div class="all">
+                    <div class="main">
+                        <div class="sub">
+                            <h4>From Decimal</h4>
+                            <div class="small">
+                                <input type="radio" onclick="oprt(1)" name="u" id="" checked>
+                                <label for="a">to Binary</label>
+                            </div>
+                            <!-- <br> -->
+                            <div class="small">
+                                <input type="radio" onclick="oprt(2)" name="u" id="">
+                                <label for="b">to octal</label>
+                            </div>
+                            <!-- <br> -->
+                            <div class="small">
+                                <input type="radio" onclick="oprt(3)" name="u" id="">
+                                <label for="c">to hexa</label>
+                            </div>
+                        </div>
+                        <!-- /decimal -->
+                        <!-- binary -->
+                        <div class="sub">
+                            <h4>From Binary</h4>
+                            <div class="small">
+                                <input type="radio" onclick="oprt(4)" name="u" id="">
+                                <label for="u">to Decimal</label>
+                            </div>
+                            <!-- <br> -->
+                            <div class="small">
+                                <input type="radio" onclick="oprt(5)" name="u" id="">
+                                <label for="u">to octal</label>
+                            </div>
+                            <!-- <br> -->
+                            <div class="small">
+                                <input type="radio" onclick="oprt(6)" name="u" id="">
+                                <label for="u">to hexa</label>
+                            </div>
+                        </div>
+                        <!-- /binary -->
+                        <!-- octal -->
+                        <div class="sub">
+                            <h4>From octal</h4>
+                            <div class="small">
+                                <input type="radio" onclick="oprt(7)" name="u" id="">
+                                <label for="u">to Decimal</label>
+                            </div>
+                            <!-- <br> -->
+                            <div class="small">
+                                <input type="radio" onclick="oprt(8)" name="u" id="">
+                                <label for="u">to binary</label>
+                            </div>
+                            <!-- <br> -->
+                            <div class="small">
+                                <input type="radio" onclick="oprt(9)" name="u" id="">
+                                <label for="u">to hexa</label>
+                            </div>
+                        </div>
+                        <!-- /octal -->
+                        <!-- hexadecimal -->
+                        <div class="sub">
+                            <h4>From Hexa</h4>
+                            <div class="small">
+                                <input type="radio" onclick="oprt(10)" name="u" id="">
+                                <label for="u">to Decimal</label>
+                            </div>
+                            <div class="small">
+                                <input type="radio" onclick="oprt(11)" name="u" id="">
+                                <label for="u">to binary</label>
+                            </div>
+                            <div class="small">
+                                <input type="radio" onclick="oprt(12)" name="u" id="">
+                                <label for="u">to octal</label>
+                                <br>
+                            </div>
+
+                        </div>
+                        <!-- /hexadecimal -->
+                    </div>
+                </div>
+            </div>
+            <!-- calculator -->
+            <div class="calculator">
+                <form name="form">
+                    <input id="textBox" class="textview" name="textview" disabled>
+                </form>
+                <table class="table">
+                    <!-- octal and decimal buttons -->
+                    <tr class="dec">
+                        <td>
+                            <button class="button" type="button" value="0" onclick="insert(0)">0</button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="1" onclick="insert(1)">1</button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="2" onclick="insert(2)">2</button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="3" onclick="insert(3)">3</button>
+                        </td>
+                    </tr>
+                    <tr class="dec">
+                        <td>
+                            <button class="button" type="button" value="7" onclick="insert(7)">7</button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="6" onclick="insert(6)">6</button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="5" onclick="insert(5)">5</button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="4" onclick="insert(4)">4</button>
+                        </td>
+                    </tr>
+                    <tr class="dec dec1">
+                        <td colspan="1">
+                            <button class="button" type="button" value="8" onclick="insert(8)">8</button>
+                        </td>
+                        <td colspan="1">
+                            <button class="button" type="button" value="9" onclick="insert(9)">9</button>
+                        </td>
+                    </tr>
+                    <tr class="dec dec2">
+                        <td colspan="1">
+                            <button class="button " type="button" value="convert" onclick="resultl()">CONVERT </button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="convert" onclick="clear1()">clear </button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="convert" onclick="clearAll()">clear all </button>
+                        </td>
+                    </tr>
+
+                    <!-- /octal and decimal buttons  -->
+                    <!-- binary bttons -->
+                    <tr class="bin bin1">
+                        <td colspan="2">
+                            <button class="button " type="button" value="0" onclick="insert(0)">0</button>
+                        </td>
+                        <td colspan="2">
+                            <button class="button" type="button" value="1" onclick="insert(1)">1</button></td>
+                    </tr>
+                    <tr class="bin bin2">
+                        <td>
+                            <button class="button " type="button" value="convert" onclick="resultl()">CONVERT </button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="convert" onclick="clear1()">clear </button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="convert" onclick="clearAll()">clear all </button>
+                        </td>
+                    </tr>
+                    <!-- /binary buttons -->
+                    <!-- hexadecimal buttons -->
+                    <tr class="hex">
+                        <td>
+                            <button class="button" type="button" value="A" onclick="insert('A')">A</button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="B" onclick="insert('B')">B</button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="C" onclick="insert('C')">C</button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="D" onclick="insert('D')">D</button>
+                        </td>
+                    </tr>
+                    <tr class="hex">
+                        <td>
+                            <button class="button" type="button" value="7" onclick="insert('E')"> E </button>
+                        </td>
+                        <td>
+                            <button class="button" value="8" onclick="insert('F')">F </button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="9" onclick="insert(0)">  0 </button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="E" onclick="insert('E')"> 1</button>
+                        </td>
+                    </tr>
+                    <tr class="hex">
+                        <td>
+                            <button class="button" type="button" value="4" onclick="insert(5)"> 5 </button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="5" onclick="insert(4)"> 4</button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="6" onclick="insert(3)"> 3</button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="F" onclick="insert(2)"> 2</button>
+                        </td>
+                    </tr>
+
+                    <tr class="hex">
+                        <td>
+                            <button class="button" type="button" value="1" onclick="insert(6)"> 6 </button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="2" onclick="insert(7)"> 7</button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="3" onclick="insert(8)"> 8</button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="0" onclick="insert(9)"> 9</button>
+                        </td>
+                    </tr>
+                    <tr class="hex hex1">
+                        <td>
+                            <button class="button " type="button" value="convert" onclick="resultl()">CONVERT </button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="convert" onclick="clear1()">clear </button>
+                        </td>
+                        <td>
+                            <button class="button" type="button" value="convert" onclick="clearAll()">clear all </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- /calculator -->
+        </div>
+        <!-- /calculator -->
+        <p class="instruction">instructions</p>
+        <div class="middle">
+            <div class="me">
+                <!-- Decimal to binary instruction -->
+                <li class="item" id="db">
+                    <a href="#db" class="btn">Decimal to binary</a>
+                    <div class="sme">
+                        <div class="body">
+                            <h3>Steps to Convert from Decimal to Binary</h3>
+                            <p class="pmain">If you don't have a calculator to hand, you can easily convert a decimal number to binary using the remainder method. This involves dividing the number by 2 recursively until you're left with 0, while taking note of each remainder.
+                                <ol class="pmain">
+                                    <li> Write down the decimal number.</li>
+                                    <li> Divide the number by 2.</li>
+                                    <li> Write the result underneath.</li>
+                                    <li> Write the remainder on the right hand side. This will be 0 or 1.</li>
+                                    <li> Divide the result of the division by 2 and again write down the remainder.</li>
+                                    <li> Continue dividing and writing down remainders until the result of the division is 0.</li>
+                                    <li> The most significant bit (MSB) is at the bottom of the column of remainders and the least significant bit (LSB) is at the top.</li>
+                                    <li> Read the series of 1s and 0s on the right from the bottom up. This is the binary equivalent of the decimal number.</li>
+                                </ol>
+                            </p>
+                            <br>
+                            <p>
+                                <table class="ttable" style="width: 20%;">
+                                    <tr>
+                                        <th>Dfecimal</th>
+                                        <th>Binary</th>
+                                    </tr>
+                                    <tr>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>101</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>110</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>111</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>1000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>1001</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>1010</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>1011</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>1100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>1101</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>1110</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>1111</td>
+                                    </tr>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <!-- /Db -->
+                <!-- do -->
+                <li class="item" id="do">
+                    <a href="#do" class="btn">Decimal to Octal</a>
+                    <div class="sme">
+                        <div class="body">
+                            <h3> Convert Decimal to Octal</h3>
+                            <p>Follow the steps given below to learn the decimal to octal conversion:
+                                <ol>
+                                    <li>Write the given decimal number</li>
+                                    <li>If the given decimal number is less than 8 the octal number is the same</li>
+                                    <li>If the decimal number is greater than 7 then divide the number by 8.</li>
+                                    <li>Note the remainder we get after division</li>
+                                    <li>Repeat step 3 and 4 with the quotient till it is less than 8</li>
+                                    <li>Now, write the remainders in reverse order(bottom to top</li>
+                                    <li>The resultant is the equivalent octal number to the given decimal number</li>
+
+                                </ol>
+
+                            </p>
+                            <br>
+                            <br>
+                            <p><b>Example 1</b>: (1465)10 = (2671)8
+                                <br>
+                                <br>
+                                <br>1465 ÷ 8 = 183.125
+                                <br>0.125 * 8 = 1 (Remainder: 1)
+                                <br>183 ÷ 8 = 22.875
+                                <br>0.875 * 8 = 7 (Remainder 7)
+                                <br>
+                                <br>
+                                <br>22 ÷ 8 = 2.75
+                                <br>0.75 * 8 = 6 (Remainder 6)
+                                <br>
+                                <br>
+                                <br>2 ÷ 8 = 0.25
+                                <br>0.25 *8 = 2 (Remainder 2)
+                                <br>
+                                <br>
+                                <br>Read the remainder from the most significant to the least - from bottom to top: 2671.
+                                <br>
+                                <br>
+                                <br>This is the octal equivalent of (1465)10
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <!-- /do -->
+                <!-- dh -->
+                <li class="item" id="dh">
+                    <a href="#dh" class="btn">Decimal to Hexadecimal</a>
+                    <div class="sme">
+                        <div class="body">
+                            <h3>Converting Decimal To HexaDecimal</h3>
+                            <p>Steps:
+                                <ol>
+                                    <li>Divide the decimal number by 16. Treat the division as an integer division.</li>
+                                    <li>Write down the remainder (in hexadecimal).</li>
+                                    <li>Divide the result again by 16. Treat the division as an integer division</li>
+                                    <li>Repeat step 2 and 3 until result is 0</li>
+                                    <li>The hex value is the digit sequence of the remainders from the last to first</li>
+                                    <li> Note: a remainder in this topic refers to the left over value after performing an integer division.</li>
+                                </ol>
+                            </p>
+                            <h2 style="color: rgb(100,100,100);">Example of decimal to hex conversion</h2>
+                            <br>
+                            <br>
+                            <p>
+                                Let's take the decimal 7803. First we divide it down by 16.
+                                <br>
+                                <br> 7803 ÷ 16 = 487.6875 (result over 15, must divide again) 487.6875 ÷ 16 = 30.48046875 (result over 15, must divide again) 30.48046875 ÷ 16 = 1.9050293
+                                <br>
+                                <br>
+                                <br> The first decimal digit is 1. So now we begin multiplying the remainder by 16. 0.9050293 x 16 = 14.4804688 (second decimal digit is 14) 0.4804688 x 16 = 7.6875008 (third decimal digit is 7) 0.6875008 x 16 = 11.0000128
+                                (rounds to 11, our last decimal digit)
+                                <br>
+                                <br>
+                                <br> So we have the resulting digits of 1-14-7-11.
+                                <br>
+                                <br> Using the hex-decimal comparison list above again, 1 and 7 are unchanged, while 14 is E, and 11 is B.
+                                <br>
+                                <br> Putting them all together gives us 1E7B. We can write it as 1E7B16 to show that it's a hex number.
+                                <br>
+
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <!-- dh -->
+                <!-- bd -->
+                <li class="item" id="bd">
+                    <a href="#bd" class="btn">Binary to Decimal</a>
+                    <div class="sme">
+                        <div class="body">
+                            <h3>Binary to Decimal Conversion</h3>
+                            <p>Conversion of binary to decimal (base-2 to base-10) numbers and back is an important concept to understand as the binary numbering system forms the basis for all computer and digital systems. The decimal or “denary” counting
+                                system uses the Base-of-10 numbering system where each digit in a number takes on one of ten possible values, called “digits”, from 0 to 9, eg. 21310 (Two Hundred and Thirteen). But as well as having 10 digits ( 0 through
+                                9 ), the decimal numbering system also has the operations of addition ( + ), subtraction ( – ), multiplication ( × ) and division ( ÷ ). In a decimal system each digit has a value ten times greater than its previous number
+                                and this decimal numbering system uses a set of symbols, b, together with a base, q, to determine the weight of each digit within a number. For example, the six in sixty has a lower weighting than the six in six hundred.
+                                Then in a binary numbering system we need some way of converting Decimal to Binary as well as back from Binary to Decimal. Any numbering system can be summarised by the following relationship: N = bi qi where: N is a real
+                                positive number b is the digit q is the base value and integer (i) can be positive, negative or zero N = bn qn… b3 q3 + b2 q2 + b1 q1 + b0 q0 + b-1 q-1 + b-2 q-2… etc.
+
+                            </p>
+                            <br>
+                            <p>
+                                <table class="ttable" style="width: 20%;">
+                                    <tr>
+                                        <th>Binary</th>
+                                        <th>deciaml</th>
+                                    </tr>
+                                    <tr>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>100</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>101</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>110</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>111</td>
+                                        <td>7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1000</td>
+                                        <td>8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1001</td>
+                                        <td>9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1010</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1011</td>
+                                        <td>11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1100</td>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1101</td>
+                                        <td>13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1110</td>
+                                        <td>14</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1111</td>
+                                        <td>15</td>
+                                    </tr>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <!-- /bd -->
+                <!-- bo -->
+                <li class="item" id="bo">
+                    <a href="#bo" class="btn">Binary to Octal</a>
+                    <div class="sme">
+                        <div class="body">
+                            <h3> Convert Binary to Octal</h3>
+                            <p>Binary and octal systems are different number systems commonly used in computing. They have different bases -- binary is base-two and octal base-eight -- meaning they must be grouped to convert. This, however, sounds far more
+                                complicated than this very easy conversion actually is
+                            </p>
+                            <br>
+                            <br>
+                            <p><b>Example</b> − Convert binary number 10010110 into octal number.
+                                <br>
+                                <br>First convert this into decimal number= (10010110)2
+                                <br>
+                                <br>= 1x27+0x26+0x25+1x24+0x23+1x22+1x21+0x20
+                                <br>
+                                <br>= 128+0+0+16+0+4+2+0
+                                <br>
+                                <br>
+                                <br>= (150)10
+                                <br>
+                                <br>
+                                <br>
+                                <br>Then, convert it into octal number
+                                <br>
+                                <br>= (150)10
+                                <br>
+                                <br>= 2x82+2x81+6x80
+                                <br>
+                                <br>= (226)8 which is answer.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <!-- /bo -->
+                <!-- bh -->
+                <li class="item" id="bh">
+                    <a href="#bh" class="btn">Binary to Hexadecimal</a>
+                    <div class="sme">
+                        <div class="body">
+                            <h3> Convert Binary To HexaDecimal</h3>
+                            <p>This article will explain how to convert binary (base 2) to hexadecimal (base 16). Whether it is for coding, for math class, or for The Martian, hexadecimal is a useful and powerful shortcut when writing long binary strings.
+                                Since both bases are powers of 2, this procedure is much simpler than general conversions such as converting decimal to binary. All you need are basic adding and counting skills to make turn a binary number into hexadecimal.
+                            </p>
+                            <br>
+                            <br>
+                            <p><b>Example #1</b>
+                                <br>
+                                <br>
+                                <br>Convert (01001110)2 to hex:
+                                <br>
+                                <br>
+                                <br>(0100)2 = (4)16
+                                <br>
+                                <br>
+                                <br>(1110)2 = (E)16
+                                <br>
+                                <br>So
+                                <br>
+                                <br>(01001110)2 = (4E)16
+                                <br>
+                                <br>
+                                <br>
+                                <br><b>Example #2</b>
+                                <br>
+                                <br>Convert (0100101000000001)2 to hex:
+                                <br>
+                                <br>(0100)2 = (4)16
+                                <br>
+                                <br>(1010)2 = (A)16
+                                <br>
+                                <br>(0000)2 = (0)16
+                                <br>
+                                <br>(0001)2 = (1)16
+                                <br>
+                                <br>So
+                                <br>
+                                <br>(0100101000000001)2 = (4A01)16
+
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <!-- /bh -->
+                <!-- od -->
+                <li class="item" id="od">
+                    <a href="#od" class="btn">Octal to Decimal</a>
+                    <div class="sme">
+                        <div class="body">
+                            <h3>Convert octal to decimal</h3>
+                            <p>o convert an octal number (base-8) to the decimal (base-10) number system, we need to use octal place value to add the base-10 value of each digit.In the octal place value system, each time you move a place to the left, the
+                                value increases eight-fold.In octal, the digit values go from zero to seven; numbers 8 and 9 are not allowed!
+
+                            </p>
+                            <br>
+                            <p>1) Convert 275 from octal to decimal. Step 1) Write down the place value of each digit.
+                                <br> 82 81 80 64 8 1 2 7 5
+                                <br>
+                                <br>
+                                <br> Step 2) Add up the place value of each digit.
+                                <br> 64x2 + 8x7 + 1x5
+                                <br>
+                                <br>
+                                <br> = 128 + 56 + 5 = 189
+                                <br>
+                                <br>
+                                <br> So 275 in octal is equal to 189.</p>
+                            <br>
+                            <p>2) Convert 3250 from octal into decimal.
+                                <br>
+                                <br> Step 1) Write down the place value of each digit. 83 82 81 80 512 64 8 1 3 2 5 0
+                                <br>
+                                <br>
+                                <br>Step 2) Add up the place value of each digit.
+                                <br>
+                                <br>
+                                <br>512x3 + 64x2 + 8x5 + 1x0
+                                <br>
+                                <br>
+                                <br>1536 + 128 + 40 + 0 = 1704
+                                <br>
+                                <br>
+                                <br>So 3250 in octal is equal to 1704.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <!-- /od -->
+                <!-- ob -->
+                <li class="item" id="ob">
+                    <a href="#ob" class="btn">Octal to Binary</a>
+                    <div class="sme">
+                        <div class="body">
+                            <h3>Convert octal to binary</h3>
+                            <p>n order to convert octal to binary number, we have to follow a few steps. Octal numbers have base 8 and binary numbers have base 10. We cannot directly convert an octal number into a binary number, but by converting the octal
+                                into a decimal number, which has base 10. Then we will proceed to convert the decimal number into its equivalent binary number. Before we learn the conversion method, let us learn about both the number systems.Octal Numbers:
+                                Octal numbers are the numbers which have base 8. It is represented as N8. It uses the digits 0,1, 2, 3, 4, 5, 6 and 7 to represent the numbers in this number system.
+                            </p>
+                            <br>
+                            <p><b>Example </b>− Convert octal number 205 into binary number. First convert it into decimal or hexadecimal number, = (205)8 = (2x82+0x81+5x80)8 or (010 000 101)2 Because base of octal and hexadecimal are 8 and 16 respectively.
+                                = (133)10 or (0 1000 0101)2 = (133)10 or (85)16 Then convert it into binary number by converting each digit. = (1x27+0x26+0x25+0x24+0x23+1x22+0x21+1x20)2 or (1000 0101)2 = (10000101)2
+                                <br><br>
+                                <table style="width: 20%;" class="ttable">
+                                    <tr>
+                                        <th>Octal</th>
+                                        <th>Binary</th>
+                                    </tr>
+                                    <tr>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>101</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>110</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>111</td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <br>
+                            </p>
+                            <p>This method is simple and also works as reverse of Binary to Octal Conversion. The algorithm is explained as following below. Take Octal number as input Convert each digit of octal into binary. That will be output as binary
+                                number. Example-1 Convert octal number 540 into binary number. According to above algorithm, equivalent binary number will be, = (540)8 = (101 100 000)2 = (101100000)2 This is very simple conversion, you can use for mixed
+                                (integer with fractional) octal number as well.</p>
+                        </div>
+
+                    </div>
+            </div>
+            </li>
+            <!-- /ob -->
+            <!-- oh -->
+            <li class="item" id="oh">
+                <a href="#oh" class="btn">Octal to Hexadecimal</a>
+                <div class="sme">
+                    <div class="body">
+                        <h3>Convert octal to hexadecimal</h3>
+                        <p>While converting from octal to hexadecimal unit, it is a usual practice to convert the octal to hexadecimal by converting the octal number into binary digit and then further to from binary to hexadecimal.For example to convert
+                            the number 536 from octal to hexadecimal.
+                            <br>
+                            <h2 style="color: rgba(100,100,100);">Octal to Hexadecimal table:</h2>
+                            <br>
+                            <table class="ttable" style="width: 20%;">
+                                <tr>
+                                    <th>Octal</th>
+                                    <th>Hexadeciaml</th>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>9</td>
+                                </tr>
+                            </table>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <!-- /oh -->
+            <!-- hd -->
+            <li class="item" id="hd">
+                <a href="#hd" class="btn">Hexadecimal to Decimal</a>
+                <div class="sme">
+                    <div class="body">
+                        <h3> Convert Hexadecimal to Decimal</h3>
+                        <p>Hex is a base 16 number and decimal is a base 10 number. We need to know the decimal equivalent of every hex number digit. See below of the page to check the hex to decimal chart. Here are the steps to convert hex to decimal:
+                            <ol>
+                                <li>Get the decimal equivalent of hex from table.</li>
+                                <li>Multiply every digit with 16 power of digit location</li>
+                                <li>Sum all the multipliers</li>
+                            </ol>
+                            <br>
+                            <br>
+                            <table class="ttable" style="width: 20%;">
+                                <tr>
+                                    <th>Hexadecimal</th>
+                                    <th>Deciaml</th>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>A</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>B</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>C</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>D</td>
+                                    <td>13</td>
+                                </tr>
+                                <tr>
+                                    <td>E</td>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>F</td>
+                                    <td>15</td>
+                                </tr>
+                            </table>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <!-- /hd -->
+            <!-- hb -->
+            <li class="item" id="hb">
+                <a href="#hb" class="btn">Hexadecimal to binary</a>
+                <div class="sme">
+                    <div class="body">
+
+                        <h3>Convert HexaDecimal to Binary</h3>
+                        <p>Converting from hex to binary is straightforward since hexadecimal numbers are simplified versions of binary strings. You just need to remember that each hex value will produce four binary digits.
+                            <ol>
+                                <li>Write down the hex number. If there are any, change the hex values represented by letters to their decimal equivalents.</li>
+                                <li>Each hex digit represents four binary digits and therefore is equal to a power of 2. The rightmost digit equals to 20 (1), the next one equals to 21 (2), the next one equals to 22 (4) and the leftmost one equals to 23 (8).
+                                    Write these numbers (8, 4, 2 and 1) below the hex values.</li>
+                                <li>Determine which powers of two (8, 4, 2 or 1) sum up to your hex digits. For example, if one of your hex values is 10, this means 8 and 2 sum up to 10 (4 and 1 are not used). If your hex number is 2, only 2 is used; 8, 4
+                                    and 1 are not.</li>
+                                <li>Write down 1 below those 8, 4, 2 and 1’s that are used. Write down 0 below those that are not used</li>
+                                <li>Read the 1’s and 0’s from left to right to get the binary equivalent of the given hex number</li>
+                            </ol>
+                        </p>
+                        <br>
+
+
+                        <table class="ttable" style="width: 20%;">
+                            <tr>
+
+                                <th>Hexadeciaml</th>
+                                <th>Binary</th>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>101</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>110</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>111</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>1001</td>
+                            </tr>
+                            <tr>
+                                <td>A</td>
+                                <td>1010</td>
+                            </tr>
+                            <tr>
+                                <td>B</td>
+                                <td>1011</td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>1100</td>
+                            </tr>
+                            <tr>
+                                <td>D</td>
+                                <td>1101</td>
+                            </tr>
+                            <tr>
+                                <td>E</td>
+                                <td>1110</td>
+                            </tr>
+                            <tr>
+                                <td>F</td>
+                                <td>1111</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </li>
+            <!-- /hb -->
+            <!-- ho -->
+            <li class="item" id="ho">
+                <a href="#ho" class="btn">Hexadecimal to Octal</a>
+                <div class="sme">
+                    <div class="body">
+                        <h3>Convert Hexadecimal to Octal : </h3>
+                        <p>One of the easiest conversion in digital electronics & communications. Follow the below steps to perform hex to octal number conversion.
+                            <ol>
+                                <li>Separate the digits of the given hex number, if it contains more than 1 digit.</li>
+                                <li>Find the equivalent binary number for each digit of octal number. Add 0's to the left if any of the binary equivalent is shorter than 4 bits.</li>
+                                <li> Write the all groups binary numbers together, maintaining the same group.</li>
+                                <li>Separate the binary digits into groups, each containing 3 bits or digits from right to left. Add 0s to the left, if the last group contains less than 3 bits.</li>
+                                <li>Separate the binary digits into groups, each containing 3 bits or digits from right to left. Add 0s to the left, if the last group contains less than 3 bits.</li>
+                                <li>Find the octal equivalent for each group.</li>
+                                <li>Write all octal equivalent of each digit together where keeping the same order provides the octal equivalent for the given hexadecimal.</li>
+                            </ol>
+                        </p>
+                        <br>
+                        <p>
+                            <b>Examples:</b>
+                            <br>
+                            <br>
+                            <br> Input: Hexadecimal = 1AC Output: Binary = 0654 Explanation: Equivalent binary value of 1: 0001 Equivalent binary value of A: 1010 Equivalent binary value of C: 1100
+                            <br>
+                            <br>
+                            <br> Grouping in terms of 3: 000 110 101 100
+                            <br>
+                            <br>
+                            <br>
+                            <br> Equivalent octal value of 000: 0 Equivalent octal value of 110: 6 Equivalent octal value of 101: 5 Equivalent octal value of 100: 4
+                            <br>
+                            <br>
+                            <br> Input: Hexadecimal = 5D1F Output: Octal = 56437
+
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <!-- /ho -->
+        </div>
+    </div>
+
+    </div>
+    <!-- /body -->
+    </div>
+    <!-- /continar -->
+    <!-- footer -->
+    <footer>
+        <p class="pfootar">COPY RIGHT © 2020</p>
+    </footer>
+    <!-- footer -->
+    <script type="text/javascript" src="../javascript/app.js">
+    </script>
+</body>
+
+</html>

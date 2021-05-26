@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.instruction {
+    background: #001f3f;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 1em;
+    color: white;
+    font-weight: lighter;
+}
+
+.middle {
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.me {
+    width: 100%;
+    background-color: #001f3f;
+    overflow: hidden;
+}
+
+.item {
+    border-top: 1px solid white;
+    overflow: hidden;
+}
+
+.btn {
+    font-weight: bold;
+    font-size: 16px;
+   /* font-weight: lighter;*/
+    letter-spacing: 1px;
+    text-align: center;
+    display: block;
+    padding: 16px 20px;
+    background-color: #001f3f;
+    color: white;
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+}
+
+.sme {
+    background: rgb(235,235,235);
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+    color: white;
+}
+
+.sme p {
+    font-size: 15px;
+    padding: 14px;
+    font-weight: lighter;
+}
+.sme ol li{
+    color: rgb(100,100,100);
+}
+.sme a {
+    display: block;
+    padding: 16px 26px;
+    color: white;
+    font-size: 14px;
+    margin: 4px 0;
+    position: relative;
+}
+
+.sme a:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+}
+
+.item:target .sme {
+    max-height: 100%;
+}
